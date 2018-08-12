@@ -92,7 +92,7 @@ function startMatch() {
 }
 
 function matchWord() {
-  if (wordInput.value === currentWord.innerText) {
+  if (wordInput.value.toLowerCase() === currentWord.innerText) {
     message.innerText = 'CORRECT';
     makeMessageVisible('success');
     return true;
